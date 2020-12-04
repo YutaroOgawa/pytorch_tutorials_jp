@@ -2,11 +2,9 @@
 
 - Member
 
-株式会社電通国際情報サービス AI トランスフォーメーションセンター
+[株式会社電通国際情報サービス AI トランスフォーメーションセンター](https://isid-ai.jp/)
 
 小川雄太郎、御手洗拓真、徳原光、櫻井亮佑
-
-https://isid-ai.jp/
 
 - Acknowledgement
 
