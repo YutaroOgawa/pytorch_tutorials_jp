@@ -46,7 +46,7 @@
   <body>
     <header class="my-header">
       <h1 class="my-header__page-title">
-        PyTorchチュートリアル（日本語翻訳版）
+        <span class="color_pytorch">PyTorchチュートリアル（日本語翻訳版）</span>
       </h1>
     </header>
     <main class="my-main">
@@ -63,24 +63,21 @@
             </p>
             <p>
               [2]
-              本家公式チュートリアルは、①解説ページ、②解説ページと同じ内容のGoogle
-              Colaboratoryファイル、で構成されています。
+              公式チュートリアルは、①解説ページ、②解説ページと同じ内容のGoogle
+              Colaboratoryファイル、の2つから構成されています。
               <br />
               両者は基本的には同じ内容です。本サイトでは<strong
                 ><span class="text-success">
                   「日本語版Gooogle Colaboratoryファイル」</span
                 ></strong
-              >でチュートリアルを用意しております。
+              >で、チュートリアルの日本語訳を用意しております。
             </p>
             <p>
-              [3] そのため本サイトのチュートリアルの閲覧および実行は、Google
+              [3] 本サイトのチュートリアルの閲覧および実行は、Google
               Colaboratory環境を前提とします。
 
               <br />
-              （本サイトの<a
-                href="https://pytorch.org/tutorials/index.html"
-                target="_blank"
-                >ライセンス</a
+              （本サイトの<a href="./LICENSE" target="_blank">ライセンス</a
               >はこちらとなります）
             </p>
           </div>
@@ -484,6 +481,10 @@
   }
 
   /* メインの指定 */
+  .color_pytorch {
+    color: #ee4c2c !important;
+  }
+
   .my-main {
     max-width: 1000px;
     margin: 0 auto;
