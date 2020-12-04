@@ -1,3 +1,5 @@
+## PyTorch チュートリアル（日本語翻訳版）
+
 [1] 本リポジトリでは、[「PyTorch 公式チュートリアル（英語版 version 1.7.0）」](https://pytorch.org/tutorials/index.html)を日本語に翻訳してお届けします。
 
 [2] 公式チュートリアルは、① 解説ページ、② 解説ページと同じ内容の Google Colaboratory ファイル、の 2 つから構成されています。
