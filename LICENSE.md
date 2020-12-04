@@ -1,10 +1,10 @@
-ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ï¼ˆLicenseï¼‰
+ƒ‰ƒCƒZƒ“ƒXiLicensej
 
 - Member
 
-æ ªå¼ä¼šç¤¾é›»é€šå›½éš›æƒ…å ±ã‚µãƒ¼ãƒ“ã‚¹ AI ãƒˆãƒ©ãƒ³ã‚¹ãƒ•ã‚©ãƒ¼ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã‚»ãƒ³ã‚¿ãƒ¼
+Š”Ž®‰ïŽÐ“d’Ê‘Ûî•ñƒT[ƒrƒX AI ƒgƒ‰ƒ“ƒXƒtƒH[ƒ[ƒVƒ‡ƒ“ƒZƒ“ƒ^[
 
-å°å·é›„å¤ªéƒŽã€å¾¡æ‰‹æ´—æ‹“çœŸã€å¾³åŽŸå…‰ã€æ«»äº•äº®ä½‘
+¬ì—Y‘¾˜YAŒäŽèô‘ñ^A“¿Œ´ŒõAŸNˆä—º—C
 
 https://isid-ai.jp/
 
