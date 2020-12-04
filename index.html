@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>PyTorchチュートリアル（日本語翻訳版）</title>
+    <meta
+      content="PyTorchの公式チュートリアルの日本語翻訳版です。PyTorch入門として、PyTorchを初めて学ぶ初心者、中級者の方におすすめです。"
+      name="description"
+    />
+    <meta
+      name="”author”"
+      content="”ISID_電通国際情報サービス_AIトランスフォーメーションセンター_小川雄太郎”"
+    />
+    <meta property="og:title" content="PyTorchチュートリアル（日本語翻訳版）" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="【★後で修正】ページの URL" />
+    <meta property="og:image" content="【★後で修正】サムネイル画像の URL" />
+    <meta
+      property="og:site_name"
+      content="PyTorchチュートリアル（日本語翻訳版）"
+    />
+    <meta
+      property="og:description"
+      content="PyTorchの公式チュートリアルの日本語翻訳版です。PyTorch入門として、PyTorchを初めて学ぶ初心者、中級者の方におすすめです。"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@isid_ai_team" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="help" href="licencse.html" />
+    <link rel="icon" href="【★後で修正】アイコンURL　licencse.html" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=M+PLUS+1p"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <header class="my-header">
+      <h1 class="my-header__page-title">
+        PyTorchチュートリアル（日本語翻訳版）
+      </h1>
+    </header>
+    <main class="my-main">
+      <article>
+        <section class="about">
+          <h3 class="section__title">・本サイトの概要</h3>
+          <div class="section__contents">
+            <p>
+              [1] 本サイトでは、<a
+                href="https://pytorch.org/tutorials/index.html"
+                target="_blank"
+                >「PyTorch 公式チュートリアル（英語版 version 1.7.0）」</a
+              >を日本語に翻訳してお届けします。
+            </p>
+            <p>
+              [2]
+              本家公式チュートリアルは、①解説ページ、②解説ページと同じ内容のGoogle
+              Colaboratoryファイル、で構成されています。
+              <br />
+              両者は基本的には同じ内容です。本サイトでは<strong
+                ><span class="text-success">
+                  「日本語版Gooogle Colaboratoryファイル」</span
+                ></strong
+              >でチュートリアルを用意しております。
+            </p>
+            <p>
+              [3] そのため本サイトのチュートリアルの閲覧および実行は、Google
+              Colaboratory環境を前提とします。
+
+              <br />
+              （本サイトの<a
+                href="https://pytorch.org/tutorials/index.html"
+                target="_blank"
+                >ライセンス</a
+              >はこちらとなります）
+            </p>
+          </div>
+        </section>
+        <section class="tutorials_list">
+          <h3 class="section__title">
+            ・PyTorch入門<small>(Learning PyTorch)</small>
+          </h3>
+          <div class="section__contents">
+            <p>
+              [1] PyTorch60分講座: PyTorchとは？<small
+                >（DEEP LEARNING WITH PYTORCH: A 60 MINUTE BLITZ：WHAT IS
+                PYTORCH?）</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+            <p>
+              [2] PyTorch60分講座: Autograd（自動微分）<small
+                >（AUTOGRAD: AUTOMATIC DIFFERENTIATION）</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+            <p>
+              [3] PyTorch60分講座: ニューラルネットワーク<small
+                >（NEURAL NETWORKS）</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+            <p>
+              [4] PyTorch60分講座: クラス分類の学習方法<small
+                >（TRAINING A CLASSIFIER）</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+
+            <p>
+              [5] 例題を用いた、PyTorchの各要素の解説<small
+                >（LEARNING PYTORCH WITH EXAMPLES）</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+
+            <p>
+              [6] torch.nnの解説<small>（WHAT IS TORCH.NN REALLY?）</small>
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+            <p>
+              [7] hogehoge<small
+                >（VISUALIZING MODELS, DATA, AND TRAINING WITH
+                TENSORBOARD）</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+          </div>
+        </section>
+        <!-- / イントロ終わり-->
+
+        <!-- 画像と動画-->
+        <section class="tutorials_list">
+          <h3 class="section__title">
+            ・画像処理と動画<small>(Image/Video)</small>
+          </h3>
+          <div class="section__contents">
+            <p>
+              [1] 画像分類タスクに対する転移学習<small
+                >（TRANSFER LEARNING FOR COMPUTER VISION TUTORIAL）</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+            <p>
+              [2] Torchvisionを使用した物体検出のファインチューニング手法<small
+                >（TORCHVISION OBJECT DETECTION FINETUNING TUTORIAL）</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+            <p>
+              [3] hogehoge<small>（ADVERSARIAL EXAMPLE GENERATION）</small>
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+            <p>
+              [4] hogehoge<small>（DCGAN TUTORIAL）</small>
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+          </div>
+        </section>
+        <!-- / Image/Video終わり-->
+
+        <!-- Text -->
+        <section class="tutorials_list">
+          <h3 class="section__title">・自然言語処理<small>(Text)</small></h3>
+          <div class="section__contents">
+            <p>
+              [1] sequence-to-sequenceモデルの学習<small
+                >（SEQUENCE-TO-SEQUENCE MODELING WITH NN.TRANSFORMER AND
+                TORCHTEXT）</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+            <p>
+              [2] 文字単位RNNによる名前（苗字）の分類<small
+                >（NLP FROM SCRATCH: CLASSIFYING NAMES WITH A CHARACTER-LEVEL
+                RNN）</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+            <p>
+              [3] 文字単位RNNによる名前（苗字）の生成<small
+                >（NLP FROM SCRATCH: GENERATING NAMES WITH A CHARACTER-LEVEL
+                RNN）</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+            <p>
+              [4] sequence to sequenceとアテンションによる翻訳モデル<small
+                >（NLP FROM SCRATCH: TRANSLATION WITH A SEQUENCE TO SEQUENCE
+                NETWORK AND ATTENTION）</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+
+            <p>
+              [5] TorchTextを使ったテキスト分類<small
+                >（TEXT CLASSIFICATION WITH TORCHTEXT）</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+
+            <p>
+              [6] TorchTextを使った言語翻訳<small
+                >（LANGUAGE TRANSLATION WITH TORCHTEXT）</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+          </div>
+        </section>
+        <!-- / Image/Video終わり-->
+        <!-- Deploying PyTorch Models in Production -->
+        <section class="tutorials_list">
+          <h3 class="section__title">
+            ・PyTorchモデルのデプロイメント手法<small
+              >(Deploying PyTorch Models in Production)</small
+            >
+          </h3>
+          <div class="section__contents">
+            <p>
+              [1] FlaskのREST APIとしてデプロイする方法（Python環境）<small
+                >（DEPLOYING PYTORCH IN PYTHON VIA A REST API WITH
+                FLASK）</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+
+            <p>
+              [2] TorchScript入門<small>（INTRODUCTION TO TORCHSCRIPT）</small>
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+
+            <p>
+              [3] C++でのTorchScriptモデルのロード手法<small
+                >（LOADING A TORCHSCRIPT MODEL IN C++）</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+
+            <p>
+              [4] PyTorchモデルのONNXへの変換とONNXランタイムでの実行<small
+                >((OPTIONAL) EXPORTING A MODEL FROM PYTORCH TO ONNX AND RUNNING
+                IT USING ONNX RUNTIME)</small
+              >
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+          </div>
+        </section>
+        <!-- / Deploying PyTorch Models in Production -->
+
+        <!-- hogehoge -->
+        <section class="tutorials_list">
+          <h3 class="section__title">・hogehoge<small>(fugafuga)</small></h3>
+          <div class="section__contents">
+            <p>
+              [1] hogehoge<small>（fugafuga）</small>
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+          </div>
+        </section>
+        <!-- / hogehoge -->
+
+        <!-- hogehoge -->
+        <section class="tutorials_list">
+          <h3 class="section__title">・hogehoge<small>(fugafuga)</small></h3>
+          <div class="section__contents">
+            <p>
+              [1] hogehoge<small>（fugafuga）</small>
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+          </div>
+        </section>
+        <!-- / hogehoge -->
+
+        <!-- hogehoge -->
+        <section class="tutorials_list">
+          <h3 class="section__title">・hogehoge<small>(fugafuga)</small></h3>
+          <div class="section__contents">
+            <p>
+              [1] hogehoge<small>（fugafuga）</small>
+
+              <a
+                style="width: max-content; margin: auto"
+                href="./index.html"
+                class="colab-root"
+              >
+                <span class="colab-span">日本語解説へ</span>
+              </a>
+            </p>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer class="my-footer">
+      <small>PyTorchチュートリアル（日本語翻訳版）</small>
+    </footer>
+  </body>
+</html>
+
+<style>
+  /* サイト全体の指定 */
+  body {
+    /*font-family: 'M PLUS 1p';*/
+    font-family: 'Noto Sans JP';
+  }
+
+  /* ヘッダーの指定 */
+  .my-header {
+    text-align: center;
+    margin: 3rem 3rem 4rem 3rem;
+  }
+
+  .my-header__page-title {
+    color: #333333;
+  }
+
+  /* メインの指定 */
+  .my-main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .section__title {
+    color: #333333;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .section__contents {
+    color: #333333;
+    margin: 0rem 0rem 4rem 0.2rem;
+    line-height: 1.7;
+  }
+
+  /* フッターの指定 */
+  .my-footer {
+    text-align: center;
+    margin: 3rem 3rem 3rem 3rem;
+  }
+
+  /* Google Colaboratory */
+  .colab-root {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px !important;
+    text-decoration: none;
+    color: #666;
+    font-weight: 300;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    line-height: 16px;
+  }
+
+  span.colab-span {
+    background-image: url(assets/colab_mark.jpg);
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-y: 2px;
+    display: inline-block;
+    padding-left: 24px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+
+  a.colab-root:hover {
+    color: #666;
+    background: white;
+    border-color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+  }
+</style>
