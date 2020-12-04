@@ -14,7 +14,7 @@
 
 [株式会社電通国際情報サービス（ISID） AI トランスフォーメーションセンター](https://isid-ai.jp/)
 
-小川雄太郎、御手洗拓真、徳原光、櫻井亮佑
+[小川雄太郎](https://github.com/YutaroOgawa/about_me)、御手洗拓真、徳原光、櫻井亮佑
 
 - Acknowledgement
 
