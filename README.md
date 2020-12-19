@@ -7,6 +7,8 @@
 
 (未完成分は順次公開いたします)
 
+[●PyTorch チュートリアル（日本語翻訳版）サイトはこちら](https://yutaroogawa.github.io/pytorch_tutorials_jp/)
+
 [3] 本サイトのチュートリアルの閲覧および実行は、Google Colaboratory 環境を前提とします。
 （本サイトのライセンスは[こちら](./LICENSE.html)となります）
 
