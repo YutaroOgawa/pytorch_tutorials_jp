@@ -1,4 +1,4 @@
-## PyTorch チュートリアル（日本語翻訳版）
+## PyTorch公式チュートリアル（日本語翻訳版）
 
 [1] 本リポジトリでは、[「PyTorch 公式チュートリアル（英語版 version 1.7.0）」](https://pytorch.org/tutorials/index.html)を日本語に翻訳してお届けします。
 
